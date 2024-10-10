@@ -41,7 +41,6 @@ const PriceCard: FC<PriceCardProps> = (props: PriceCardProps) => {
           </div>
           ))
         }
-       
       </div>
     </div>
   );

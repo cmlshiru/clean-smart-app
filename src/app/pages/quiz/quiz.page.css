@@ -1,0 +1,42 @@
+.quiz-page {
+    background-color: rgb(51,69,48);
+    border-style: solid;
+    border-width: 15px;
+    border-color: rgb(123, 100, 85);
+    box-shadow: 2px 2px 10px rgb(54, 48, 43);
+    z-index: 1;
+}
+
+.quiz-bg {
+    background-color: rgb(225,216,207);
+}
+
+.floor {
+    bottom: 0;
+    height: 30%;
+    background-color: rgb(182,160,133);
+    z-index: 0;
+    border-width: 10px 0px 0px 0px;
+    border-style: solid;
+    border-color: rgb(102, 90, 75);
+}
+
+.professor{
+    background-image: url('../../../../public/imgs/Profesora.png');
+    height: 70%;
+    bottom: 0;
+    right: 10px;
+    z-index: 1;
+    min-width: 400px;
+}
+
+/* 
+colores
+
+pizarra: 51,69,48
+fondo: 225, 216, 207
+marco: 123, 100, 85,
+piso: 182,160,133
+
+
+*/
