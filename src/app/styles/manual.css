@@ -1,0 +1,35 @@
+/* $color-blue: #2e95aa;
+$color-yellow: #fed754;
+$color-orange: #cc4b48;
+$color-gray: #c1c1c1;
+$color-green: #abc3b5; */
+
+.book {
+    background-color: #2e95aa;
+    border-radius: 5px 15px 15px 5px;
+    height: 200px;
+    width: 150px;
+    position: relative;
+    box-shadow: 5px 5px 5px rgb(128, 127, 127);
+}
+
+.book-cover {
+    background-color: #f7eded;
+    height: 30%;
+    width: 100%;
+    margin-top: 45%;
+    color: rgb(51, 50, 50);
+    font-weight: bolder;
+}
+
+.book-separator {
+    height: 105%;
+}
+
+.book.red {
+    background-color: #cc4b48;
+}
+
+.book.green {
+    background-color: #abc3b5;
+}

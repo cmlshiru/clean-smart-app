@@ -1,34 +1,49 @@
-'use client';
-import React, { FC } from "react";
+"use client";
+import React, { FC, useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 interface NavbarProps {
-  navHeadText?:string;
+  navHeadText?: string;
 }
 
 const Navbar: FC<NavbarProps> = () => {
+  const [isLogged, setIsLogged] = useState(false);
 
-  const router = useRouter();
-
-  const goTo = (route:string) => {
-    router.push(route);
-  }
+  useEffect(() => {
+    setIsLogged(sessionStorage?.getItem("userLogged") == "true");
+  }, []);
 
   return (
     <div className={styles.Navbar}>
       <div className="col-12 my-3 d-flex justify-content-between">
-        <div className="navbar-brand col-2 mb-0 h1 mt-auto">Home</div>
-        {
-          (sessionStorage?.getItem('userLogged')=='true') && <div className="navbar-brand col-2 mb-0 h1 mt-auto" onClick={() => goTo('pages/quiz')}>Quiz</div>
-        }
-        <div className="col-2">
-          <Link href={'pages/login'}>Log in</Link>
+        <div
+          className="navbar-brand col-2 mb-0 h1 mt-auto"
+        >
+          <Link href={"home"}>Home</Link>
         </div>
+        {isLogged && (
+          <div
+            className="navbar-brand col-2 mb-0 h1 mt-auto"
+          >
+            <Link href={"pages/quiz"}>Quiz</Link>
+          </div>
+        )}
+        {isLogged && (
+          <div
+            className="navbar-brand col-2 mb-0 h1 mt-auto"
+          >
+             <Link href={"pages/dashboard"}>Dashboard</Link>
+          </div>
+        )}
+        {!isLogged && (
+          <div className="col-2">
+            <Link href={"pages/login"}>Log in</Link>
+          </div>
+        )}
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;
