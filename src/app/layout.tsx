@@ -5,6 +5,8 @@ import "./globals.css";
 import "./styles/inputs.css";
 import "./styles/buttons.css";
 import "./styles/cards.css";
+import "./styles/manual.css";
+import "./styles/sheet.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

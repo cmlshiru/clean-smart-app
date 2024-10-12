@@ -5,21 +5,22 @@
 }
 
 .login-container:hover{
-    height: 600px;
-    width: 400px;
+    height: 510px;
+    width: 355px;
     opacity: 1;
     cursor: pointer;
 }
 
 .login-container:active{
-    height: 600px;
-    width: 400px;
+    height: 510px;
+    width: 355px;
     opacity: 1;
     cursor: pointer;
 }
 
 
 .login-page {
-    background-image: url("../../../../public/imgs/backg.png");
+    background-image: url("../../../../public/imgs/bella.gif");
+    /* background-color: black; */
     background-size: cover;
 }

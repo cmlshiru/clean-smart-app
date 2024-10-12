@@ -4,7 +4,7 @@ const LazyMultipleChoiceQuestion = lazy(() => import('./MultipleChoiceQuestion')
 
 const MultipleChoiceQuestion = (props: JSX.IntrinsicAttributes & { children?: React.ReactNode; }) => (
   <Suspense fallback={null}>
-    <LazyMultipleChoiceQuestion {...props} />
+    <LazyMultipleChoiceQuestion questionNumber={0} questionTitle='' {...props} />
   </Suspense>
 );
 

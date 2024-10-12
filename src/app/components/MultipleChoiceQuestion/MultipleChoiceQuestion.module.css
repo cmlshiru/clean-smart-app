@@ -1,1 +1,4 @@
-.MultipleChoiceQuestion {}
+.MultipleChoiceQuestion {
+    color: #fafafa;
+    text-transform: capitalize;
+}
