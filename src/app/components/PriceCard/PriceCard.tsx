@@ -11,7 +11,7 @@ interface PriceCardProps {
 const PriceCard: FC<PriceCardProps> = (props: PriceCardProps) => {
   return (
     <div className={styles.PriceCard}>
-      <div className="card-head py-3 d-flex justify-content-center">
+      <div className="card-head pt-4 d-flex justify-content-center">
         {props.cardTitle}
       </div>
       <div className="card-body py-3">
@@ -26,21 +26,12 @@ const PriceCard: FC<PriceCardProps> = (props: PriceCardProps) => {
         ))}
         <div className="d-flex justify-content-center my-2">
           <button className="card-button " type="button">
-            Register - Full Payment
+            Buy Now
           </button>
         </div>
         <p className="subtext">
           The subscription renews anually por $99*
         </p>
-        {
-          props.buttonTexts?.map((buttonText,id)=>(
-            <div key={id} className="d-flex justify-content-center my-2">
-            <button className="card-button " type="button">
-              {buttonText}
-            </button>
-          </div>
-          ))
-        }
       </div>
     </div>
   );

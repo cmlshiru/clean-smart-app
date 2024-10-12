@@ -4,7 +4,7 @@ const LazyDragAndDropQuestion = lazy(() => import('./DragAndDropQuestion'));
 
 const DragAndDropQuestion = (props: JSX.IntrinsicAttributes & { children?: React.ReactNode; }) => (
   <Suspense fallback={null}>
-    <LazyDragAndDropQuestion {...props} />
+    <LazyDragAndDropQuestion questionNumber={0} questionTitle='' {...props} />
   </Suspense>
 );
 

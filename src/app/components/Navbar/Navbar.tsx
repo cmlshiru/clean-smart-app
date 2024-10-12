@@ -26,19 +26,19 @@ const Navbar: FC<NavbarProps> = () => {
           <div
             className="navbar-brand col-2 mb-0 h1 mt-auto"
           >
-            <Link href={"pages/quiz"}>Quiz</Link>
+            <Link href={"quiz"}>Quiz</Link>
           </div>
         )}
         {isLogged && (
           <div
             className="navbar-brand col-2 mb-0 h1 mt-auto"
           >
-             <Link href={"pages/dashboard"}>Dashboard</Link>
+             <Link href={"dashboard"}>Dashboard</Link>
           </div>
         )}
         {!isLogged && (
           <div className="col-2">
-            <Link href={"pages/login"}>Log in</Link>
+            <Link href={"login"}>Log in</Link>
           </div>
         )}
       </div>

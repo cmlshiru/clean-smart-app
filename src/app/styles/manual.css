@@ -8,9 +8,11 @@ $color-green: #abc3b5; */
     background-color: #2e95aa;
     border-radius: 5px 15px 15px 5px;
     height: 200px;
-    width: 150px;
+    width: 200px;
     position: relative;
     box-shadow: 5px 5px 5px rgb(128, 127, 127);
+    transition: .5s all;
+
 }
 
 .book-cover {
@@ -22,14 +24,29 @@ $color-green: #abc3b5; */
     font-weight: bolder;
 }
 
-.book-separator {
-    height: 105%;
-}
-
 .book.red {
     background-color: #cc4b48;
 }
 
 .book.green {
     background-color: #abc3b5;
+}
+
+.book-separator {
+    height: 105%;
+    background-color: inherit;
+    width: 10%;
+    position: absolute;
+    top: -2%;
+    right: 10%;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: rgba(80, 80, 80, 0.192);
+    border-width: 1px;
+}
+
+.book:hover {
+    height: 220px;
+    width: 220px;
+    transition: .5s all;
 }

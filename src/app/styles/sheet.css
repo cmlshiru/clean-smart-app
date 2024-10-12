@@ -1,0 +1,72 @@
+.paper-sheet {
+    height: 200px;
+    width: 150px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: .5s all;
+    background-color: white;
+
+}
+
+.paper-top {
+    background-color: rgb(127, 229, 255);
+    height: 25px;
+    position: relative;
+}
+
+.paper-hole {
+    height: 15px;
+    width: 15px;
+    border-radius: 7px;
+    background-color: white;
+    margin-top: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 2px 2px inset, rgba(0, 0, 0, 0.3) 0px 2px 2px 1px inset;
+}
+
+.pencil{
+    height: 70%;
+    background-color: #ffc93c;
+    width: 10%;
+    position: absolute;
+    top: 20%;
+    right: -20%;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: rgba(80, 80, 80, 0.192);
+    border-width: 1px;
+}
+
+.pencil-eraser {
+    background-color: rgb(241, 154, 230);
+    height: 10px;
+    position: relative;
+}
+
+
+.pencil-point {
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 20px solid rgb(233, 209, 164);
+    position: absolute;
+    bottom: -19px;
+    left: -1.5px;
+  }
+
+  .pencil-graphit {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 8px solid rgb(100, 100, 100);
+    position: absolute;
+    top: -9px;
+    left: -4px;
+  }
+
+  .paper-sheet:hover {
+    height: 220px;
+    width: 170px;
+    transition: .5s all;
+}

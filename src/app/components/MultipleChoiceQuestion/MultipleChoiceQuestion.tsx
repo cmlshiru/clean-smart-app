@@ -22,9 +22,10 @@ const MultipleChoiceQuestion: FC<MultipleChoiceQuestionProps> = (
         <h1>{props.questionNumber}.- {props.questionTitle}</h1>
         {
           props.multipleChoices?props.multipleChoices.map((choice, id) => (
-            <div key={id}>
+            <div key={id} className="d-flex">
               <input type="radio" checked={answer===id} name={`question ${id} ${props.questionNumber}`} id={(id+1).toString()+ props.questionNumber} value={id} className="" onChange={()=>setAnswer(id)} />
-              {choice}
+              <p className="px-3 py-1 m-0 choice-text">{choice}</p>
+              
             </div>
           )) : <div></div>
         }
