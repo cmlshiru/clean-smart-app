@@ -25,3 +25,11 @@
 .card-button:hover {
     background-color: rgb(38, 97, 165);
 }
+
+.manual-button {
+    background-color: rgb(51, 126, 212);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}

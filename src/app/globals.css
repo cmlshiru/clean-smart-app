@@ -73,3 +73,17 @@ a {
 .In-text {
   color: #ff347f	;
 }
+
+
+div.DraftEditor-root {
+  border: 1px solid #000;
+  background-color: beige;
+  height: 200px;
+  width: 300px;
+  overflow-y: auto;
+  margin-top: 200px;
+}
+div.DraftEditor-editorContainer,
+div.public-DraftEditor-content {
+  height: 100%;
+}

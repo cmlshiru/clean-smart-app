@@ -1,6 +1,7 @@
 import Navbar from "@/app/components/Navbar/Navbar";
 import "./dashboard.page.css";
 import Link from "next/link";
+import Footer from "@/app/components/Footer/Footer";
 
 export default function Dashboard() {
   // manuals and quices
@@ -88,6 +89,7 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

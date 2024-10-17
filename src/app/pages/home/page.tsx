@@ -1,4 +1,5 @@
 
+import Footer from "@/app/components/Footer/Footer";
 import Navbar from "@/app/components/Navbar/Navbar";
 import PriceCard from "@/app/components/PriceCard/PriceCard";
 import Image from "next/image";
@@ -106,6 +107,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
