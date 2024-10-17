@@ -1,0 +1,8 @@
+{
+  "id": 4,
+  "title": "Free",
+  "price": "$0",
+  "texts": ["Access to the both lenguages"],
+  "buttonTexts": ["3 Payments of $250", "Free 5-day Trial"],
+  "active": false
+}

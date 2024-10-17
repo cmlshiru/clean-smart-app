@@ -1,0 +1,14 @@
+[
+    {
+      "contentType": "text",
+      "content": "lorem ipsum dolor lorem ipsum dolorlorem ipsum dolor"
+    },
+    {
+      "contentType": "text",
+      "content": "este es otro lorem ipsum pero no dice nada"
+    },
+    {
+        "contentType": "img",
+        "content": "src/this is an src.jpg"
+      }
+  ]

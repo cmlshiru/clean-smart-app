@@ -50,3 +50,10 @@ $color-green: #abc3b5; */
     width: 220px;
     transition: .5s all;
 }
+
+.p-editable{
+    border-color: rgb(172, 172, 172);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+}

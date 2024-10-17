@@ -1,64 +1,103 @@
 
+'use client';
+import Footer from "@/app/components/Footer/Footer";
 import Navbar from "@/app/components/Navbar/Navbar";
 import PriceCard from "@/app/components/PriceCard/PriceCard";
+import { PriceCards } from "@/app/models/priceCards.interface";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+
+const defaultCardsContent:PriceCards[] = [
+
+  {
+    id: 4,
+    title: "Free",
+    price: "$0",
+    texts: [
+      "Access to the both lenguages",
+   
+    ],
+    buttonTexts: ["3 Payments of $250", "Free 5-day Trial"],
+    state: 'prev',
+  },
+  {
+    id: 1,
+    title: "Basic Gold",
+    price: "$699",
+    texts: [
+      "Access the course in English only",
+     
+    ],
+    buttonTexts: ["3 Payments of $250", "Free 5-day Trial"],
+    state: 'active',
+  },
+
+  {
+    id: 3,
+    title: "Basic Silver",
+    price: "$699",
+    texts: [
+      "Access the course in Spanish only",
+   
+    ],
+    buttonTexts: ["3 Payments of $250", "Free 5-day Trial"],
+    state: 'next',
+  },
+  {
+    id: 2,
+    title: "Platinum",
+    price: "$999",
+    texts: [
+      "Access both courses Spanish & English",
+     
+    ],
+    buttonTexts: ["3 Payments of $350", "Free 5-day Trial"],
+    state: 'unactive',
+  },
+  
+  {
+    id: 5,
+    title: "Diamond",
+    price: "$699",
+    texts: [
+      "Unlimited Access",
+  
+    ],
+    buttonTexts: ["3 Payments of $250", "Free 5-day Trial"],
+    state: 'unactive',
+  },
+];
+
 
 export default function Home() {
-  const cardsContent = [
 
-    {
-      id: 4,
-      title: "Free",
-      price: "$0",
-      texts: [
-        "Access to the both lenguages",
-     
-      ],
-      buttonTexts: ["3 Payments of $250", "Free 5-day Trial"],
-    },
-    {
-      id: 1,
-      title: "Basic Gold",
-      price: "$699",
-      texts: [
-        "Access the course in English only",
-       
-      ],
-      buttonTexts: ["3 Payments of $250", "Free 5-day Trial"],
-    },
+  const [cardsContent, setCardsContent] = useState(defaultCardsContent);
 
-    {
-      id: 3,
-      title: "Basic Silver",
-      price: "$699",
-      texts: [
-        "Access the course in Spanish only",
-     
-      ],
-      buttonTexts: ["3 Payments of $250", "Free 5-day Trial"],
-    },
-    {
-      id: 2,
-      title: "Platinum",
-      price: "$999",
-      texts: [
-        "Access both courses Spanish & English",
-       
-      ],
-      buttonTexts: ["3 Payments of $350", "Free 5-day Trial"],
-    },
+  const setAllInactive = (auxCardContent:PriceCards[]) => {
+    for (const content of auxCardContent){
+      content.state = 'unactive';
+    }
+    return auxCardContent;
+  }
+
+  const setActive = (id:number) => {
+    let auxCardContent = cardsContent;
+
+    auxCardContent = setAllInactive(auxCardContent);
     
-    {
-      id: 5,
-      title: "Diamond",
-      price: "$699",
-      texts: [
-        "Unlimited Access",
-    
-      ],
-      buttonTexts: ["3 Payments of $250", "Free 5-day Trial"],
-    },
-  ];
+    auxCardContent[id].state = 'active';
+    if (id>0) {
+      auxCardContent[id-1].state = 'prev';
+    }
+    if (id<auxCardContent.length-1) {
+      auxCardContent[id+1].state = 'next';
+    }
+    setCardsContent([...auxCardContent]);
+  }
+
+  useEffect(() => {
+    console.log(cardsContent)
+  }, [cardsContent]);
 
   return (
     <div className="text-center d-block justify-content-center">
@@ -91,8 +130,8 @@ export default function Home() {
             </div>
           </div>
           <div className="col-12 d-flex justify-content-center price-card-container">
-            {cardsContent.map((cardContent) => (
-              <div key={cardContent.id} className="col-3 p-3">
+            {cardsContent.map((cardContent, id) => {return (
+              <div onClick={() => setActive(id)} key={cardContent.id} className={`col-3 p-3 map-card ${cardContent.state} ${cardContent.state==='unactive'?'d-none':''}`}>
                 <PriceCard
                   cardTitle={cardContent.title}
                   cardPrice={cardContent.price}
@@ -100,10 +139,11 @@ export default function Home() {
                   buttonTexts={cardContent.buttonTexts}
                 />
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
