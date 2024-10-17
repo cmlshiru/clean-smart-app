@@ -1,3 +1,5 @@
+@import '../app/styles/sidebar.css';
+
 :root {
   --background: #e6e6e6;
   --foreground: white;
@@ -25,8 +27,8 @@ body {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: inherit !important;
+  text-decoration: none !important;
 }
 
 .cursor-pointer {
@@ -72,4 +74,18 @@ a {
 
 .In-text {
   color: #ff347f	;
+}
+
+
+div.DraftEditor-root {
+  border: 1px solid #000;
+  background-color: beige;
+  height: 200px;
+  width: 300px;
+  overflow-y: auto;
+  margin-top: 200px;
+}
+div.DraftEditor-editorContainer,
+div.public-DraftEditor-content {
+  height: 100%;
 }

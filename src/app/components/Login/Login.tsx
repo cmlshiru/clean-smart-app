@@ -10,7 +10,7 @@ interface LoginProps {
 
 const Login: FC<LoginProps> = () => {
   const userAdmited = {
-    userName: "camilo",
+    userName: "smart",
     userPass: "123",
   };
 

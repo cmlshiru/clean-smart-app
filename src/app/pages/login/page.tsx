@@ -8,7 +8,7 @@ export default function Home() {
         <div className="col-12">
             <div className='h-100 px-5 d-flex justify-content-end'>
                 <div className='login-container my-auto'>
-                    <Login/>
+                    <Login />
                 </div>
             </div>
         </div>

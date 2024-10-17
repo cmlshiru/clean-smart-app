@@ -1,0 +1,14 @@
+.Footer {
+    height: 200px;
+    background-color: #6177f0;
+    padding: 20px;
+    z-index: 3;
+    color: white;
+    font-weight: bolder;
+}
+.bottom-footer{
+    background-color: rgb(26, 191, 241);
+    color: white;
+    font-weight: bolder;
+}
+

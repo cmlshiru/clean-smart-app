@@ -55,3 +55,30 @@
   width: 100%;
   height: 100%;
 }
+
+.next {
+  size: 70%;
+  opacity: 0.6;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+  /* transition: 0.3s all ease; */
+}
+
+.map-card {
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+
+.prev {
+  size: 70%;
+  opacity: 0.6;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+  /* transition: 0.3s all ease; */
+}
+
+
