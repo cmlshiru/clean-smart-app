@@ -6,6 +6,6 @@
     box-shadow: 2px 2px 10px #6177f0;
     z-index: 2;
     position: absolute;
-    border-radius: 0px 0px 0px 50px;
+    border-radius: 0px 0px 50px 0px;
     top: 0;
 }

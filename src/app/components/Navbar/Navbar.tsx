@@ -37,11 +37,19 @@ const Navbar: FC<NavbarProps> = () => {
              <Link href={"dashboard"}>Dashboard</Link>
           </div>
         )}
+        {isLogged && (
+          <div
+            className="navbar-brand col-2 mb-0 h1 mt-auto"
+          >
+             <Link href={"profile"}>My Account</Link>
+          </div>
+        )}
         {!isLogged && (
           <div className="col-2">
             <Link href={"login"}>Log in</Link>
           </div>
         )}
+        
       </div>
     </div>
   );

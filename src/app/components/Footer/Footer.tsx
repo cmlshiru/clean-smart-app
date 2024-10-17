@@ -6,7 +6,7 @@ const Footer: FC<FooterProps> = () => (
   <div className="">
     <div className="Footer d-flex">
       <div className="col-3">
-        Providing training courses and manulas for house cleaners for onboarding and high cleaning standars
+        Providing training courses and manuals for house cleaners for onboarding and high cleaning standars
       </div>
       
       <div className="col-3"></div>
