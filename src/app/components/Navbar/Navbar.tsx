@@ -3,6 +3,7 @@ import React, { FC, useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 
+
 interface NavbarProps {
   navHeadText?: string;
 }

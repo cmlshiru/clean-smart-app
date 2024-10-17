@@ -6,58 +6,56 @@ import Image from "next/image";
 
 export default function Home() {
   const cardsContent = [
+
+    {
+      id: 4,
+      title: "Free",
+      price: "$0",
+      texts: [
+        "Access to the both lenguages",
+     
+      ],
+      buttonTexts: ["3 Payments of $250", "Free 5-day Trial"],
+    },
     {
       id: 1,
-      title: "English",
+      title: "Basic Gold",
       price: "$699",
       texts: [
-        "this is the text 1 from de card",
-        "this is the text 2 from de card",
-        "this is the text 3 from de card",
+        "Access the course in English only",
+       
+      ],
+      buttonTexts: ["3 Payments of $250", "Free 5-day Trial"],
+    },
+
+    {
+      id: 3,
+      title: "Basic Silver",
+      price: "$699",
+      texts: [
+        "Access the course in Spanish only",
+     
       ],
       buttonTexts: ["3 Payments of $250", "Free 5-day Trial"],
     },
     {
       id: 2,
-      title: "English and Spanish",
+      title: "Platinum",
       price: "$999",
       texts: [
-        "this is the text 1 from de card",
-        "this is the text 2 from de card",
-        "this is the text 3 from de card",
+        "Access both courses Spanish & English",
+       
       ],
       buttonTexts: ["3 Payments of $350", "Free 5-day Trial"],
     },
-    {
-      id: 3,
-      title: "Spanish",
-      price: "$699",
-      texts: [
-        "this is the text 1 from de card",
-        "this is the text 2 from de card",
-        "this is the text 3 from de card",
-      ],
-      buttonTexts: ["3 Payments of $250", "Free 5-day Trial"],
-    },
-    {
-      id: 4,
-      title: "Free",
-      price: "$699",
-      texts: [
-        "this is the text 1 from de card",
-        "this is the text 2 from de card",
-        "this is the text 3 from de card",
-      ],
-      buttonTexts: ["3 Payments of $250", "Free 5-day Trial"],
-    },
+    
     {
       id: 5,
-      title: "Unlimited Access",
+      title: "Diamond",
       price: "$699",
       texts: [
-        "this is the text 1 from de card",
-        "this is the text 2 from de card",
-        "this is the text 3 from de card",
+        "Unlimited Access",
+    
       ],
       buttonTexts: ["3 Payments of $250", "Free 5-day Trial"],
     },
