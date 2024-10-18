@@ -1,8 +1,59 @@
-{
-  "id": 4,
-  "title": "Free",
-  "price": "$0",
-  "texts": ["Access to the both lenguages"],
-  "buttonTexts": ["3 Payments of $250", "Free 5-day Trial"],
-  "active": false
-}
+
+{"response":[
+  {
+    "id": 4,
+    "title": "Free",
+    "price": "$0",
+    "texts": [
+      "Access to the both lenguages"
+    ],
+    "buttonTexts": ["3 Payments of $250", "Free 5-day Trial"],
+    "state": "prev"
+  },
+  {
+    "id": 1,
+    "title": "Basic Gold",
+    "price": "$699",
+    "texts": [
+      "Access the course in English only"
+     
+    ],
+    "buttonTexts": ["3 Payments of $250", "Free 5-day Trial"],
+    "state": "active"
+  },
+
+  {
+    "id": 3,
+    "title": "Basic Silver",
+    "price": "$699",
+    "texts": [
+      "Access the course in Spanish only"
+   
+    ],
+    "buttonTexts": ["3 Payments of $250", "Free 5-day Trial"],
+    "state": "next"
+  },
+  {
+    "id": 2,
+    "title": "Platinum",
+    "price": "$999",
+    "texts": [
+      "Access both courses Spanish & English"
+     
+    ],
+    "buttonTexts": ["3 Payments of $350", "Free 5-day Trial"],
+    "state": "unactive"
+  },
+  {
+    "id": 5,
+    "title": "Diamond",
+    "price": "$699",
+    "texts": [
+      "Unlimited Access"
+  
+    ],
+    "buttonTexts": ["3 Payments of $250", "Free 5-day Trial"],
+    "state": "unactive"
+    
+  }
+]}
